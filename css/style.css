@@ -1,0 +1,144 @@
+*,*::before,*::after{box-sizing: border-box;}
+
+
+body{
+    font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+background-color: rgb(247, 233, 217);
+margin: 0;
+}
+
+.cont {
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+.inner{
+    background-color: #E7ECDF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    width: 780px;
+    margin: auto;
+    
+
+}
+
+.perf img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px 0 0 15px;
+    grid-area: perf;
+    
+}
+
+.perf2{
+    display: none;
+}
+
+.title h3{
+    font-family: 'Montserrat',serif;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing:10px;
+    text-transform: uppercase;
+}
+.main_title h2{
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.main_cont{
+    width:70%;
+    grid-area: cont;
+
+}
+.price{
+    display: flex;
+    margin: auto 0;
+    padding-left: 10px;
+
+}
+.price h1{
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #3C8067;
+
+}
+.price h5{
+    text-decoration: line-through;
+    padding: 20px;
+
+}
+
+.button button{
+    background-color: #3C8067;
+    color: #fff;
+    border: none;
+    width: 215px;
+    height: 42px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+     
+
+}
+
+.button button :hover{
+    background-color: #023522;
+}
+
+
+
+[data-tooltip]{
+    position: relative;
+}
+
+[data-tooltip]::before{
+    content: url(http://localhost/previewcard/images/icon-cart.svg);
+
+
+    margin-right: 10px;
+   
+    color: #fff;
+}
+
+@media screen and (max-width:700px) {
+    .inner{
+       
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "perf2"
+        "cont";
+        background-color: rgb(163, 216, 187);
+        
+    }
+    .perf2 img{
+        grid-area: perf2;
+        max-width: 74%;
+        height: auto;
+        border-radius: 15px 15px 0 0;
+        
+        
+    }
+    .perf{
+        display: none;
+    }
+    .perf2{
+        display:block;
+    }
+    .title h3 .main_title h2 {
+      
+        padding-left: 50px;
+    }
+    .cont {
+        margin-top: 1%; 
+        margin-left: 5%;
+        padding-bottom: 15px;
+    }
+    .main_cont {
+        width: 55%;
+}
