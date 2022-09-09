@@ -82,11 +82,12 @@ main{
     border-radius: 15px;
     font-size: 14px;
     font-weight: bold;
+    cursor: pointer;
      
 
 }
 
-.button button :hover{
+.button button:hover{
     background-color: #023522;
 }
 
@@ -97,7 +98,7 @@ main{
 }
 
 [data-tooltip]::before{
-    content: url(http://localhost/previewcard/images/icon-cart.svg);
+    content: url(/images/icon-cart.svg);
 
 
     margin-right: 10px;

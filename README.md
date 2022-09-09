@@ -2,7 +2,7 @@
 
 ### Links
 
-- Solution URL: [https://adrianmbugua.github.io/Huddle/](https://adrianmbugua.github.io/PREVIEWCARD/)
+- Solution URL: [https://adrianmbugua.github.io/PREVIEWCARD/](https://adrianmbugua.github.io/PREVIEWCARD/)
 ss
 
 ### Built with
@@ -16,7 +16,9 @@ ss
 
 ### What I learned
 
-working with VW
+-working with VW
+- hard such a huge proble with hover just for having a space between button:hover
+
 
 
 ## Author
