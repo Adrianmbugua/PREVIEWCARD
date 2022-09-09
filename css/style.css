@@ -13,7 +13,7 @@ margin: 0;
     margin-left: 15%;
 }
 
-.inner{
+main{
     background-color: #E7ECDF;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -105,20 +105,20 @@ margin: 0;
     color: #fff;
 }
 
-@media screen and (max-width:700px) {
-    .inner{
+@media screen and (max-width:650px) {
+    main{
        
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
         "perf2"
         "cont";
-        background-color: rgb(163, 216, 187);
+        width: 100vw;
         
     }
     .perf2 img{
         grid-area: perf2;
-        max-width: 74%;
+        width: 100vw;
         height: auto;
         border-radius: 15px 15px 0 0;
         
@@ -129,16 +129,37 @@ margin: 0;
     }
     .perf2{
         display:block;
+    
     }
     .title h3 .main_title h2 {
       
         padding-left: 50px;
+        
     }
+
+    .main_title h2{
+  
+    font-size: 40px;
+    width: 80%;
+        }
+    
     .cont {
         margin-top: 1%; 
         margin-left: 5%;
         padding-bottom: 15px;
+        
+    }
+
+    .price{
+        justify-content: center;
     }
     .main_cont {
-        width: 55%;
+        width: 80%;
+        line-height: 2em;
+       
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
 }
