@@ -67,7 +67,7 @@ main{
     color: #3C8067;
 
 }
-.price h5{
+.price p{
     text-decoration: line-through;
     padding: 20px;
 
