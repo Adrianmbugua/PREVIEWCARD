@@ -98,7 +98,7 @@ main{
 }
 
 [data-tooltip]::before{
-    content: url(/images/icon-cart.svg);
+    content: url(https://adrianmbugua.github.io/PREVIEWCARD/images/icon-cart.svg);
 
 
     margin-right: 10px;
